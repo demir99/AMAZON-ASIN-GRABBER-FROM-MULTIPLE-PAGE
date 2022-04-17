@@ -19,7 +19,7 @@ $context = stream_context_create($options);
 $anasayfa_url_get = file_get_html($url, false, $context);
 
 
-for ($i=0; $i < 3 ; $i++)
+for ($i=0; $i < 20 ; $i++)
 {
 
   $sayfa_next_url="https://www.amazon.com".$anasayfa_url_get->find('.s-pagination-item.s-pagination-next',0)->href;
